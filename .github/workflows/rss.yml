@@ -1,38 +1,63 @@
 name: RSS Monitor
+
 on:
   schedule:
-    - cron: "*/15 * * * *"  # Runs every 15 minutes
-  workflow_dispatch:  # Allows manual triggering
+    - cron: "*/15 * * * *"  # every 15 minutes
+  workflow_dispatch:
+
+# Prevent overlapping runs from fighting over commits/pushes
+concurrency:
+  group: rss-monitor
+  cancel-in-progress: true
 
 jobs:
   run-rss-monitor:
     runs-on: ubuntu-latest
+
     permissions:
-      contents: write  # Explicitly set permission to write to repo
+      contents: write
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Full history for git operations
-      
+          fetch-depth: 0
+          persist-credentials: true
+
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.9"  # Specify exact version for consistency
-      
+          python-version: "3.9"
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install feedparser
-      
-      - name: Run RSS script
-        run: python rss_monitor.py
-        
-      - name: Commit and push results
+
+      - name: Sync with remote (avoid push conflicts)
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add -f data/rss_feeds.db index.html data/rss_monitor.log  # Force add in case files are gitignored
-          timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-          git commit -m "Update RSS results - $timestamp" || echo "No changes to commit"
-          git push || (git pull --rebase && git push)
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+
+      - name: Run RSS script
+        run: python rss_monitor.py
+
+      - name: Commit and push results
+        env:
+          GIT_TERMINAL_PROMPT: "0"
+        run: |
+          git add -f data/rss_feeds.db index.html data/rss_monitor.log
+
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          git commit -m "Update RSS results - $timestamp"
+
+          # Rebase once more in case another run landed a commit (rare w/ concurrency, but safe)
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
