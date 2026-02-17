@@ -32,7 +32,7 @@ class RSSMonitor:
             format="%(asctime)s - %(levelname)s - %(message)s",
         )
 
-        # Purge old data so DB doesn't grow forever
+        # Keep DB from growing forever
         self.purge_old_articles(months=3)
 
         print("Initialization complete.")
@@ -55,32 +55,25 @@ class RSSMonitor:
             self.conn.commit()
 
     def purge_old_articles(self, months=3):
-        """
-        Delete articles older than `months` months and VACUUM to shrink the DB file.
-        """
+        """Delete articles older than `months` months and VACUUM to shrink DB size."""
         with self.db_lock:
             cursor = self.conn.cursor()
 
-            # Count before
             cursor.execute("SELECT COUNT(*) FROM articles")
             before_count = cursor.fetchone()[0]
 
-            # Delete old rows (works well with ISO datetime strings)
             cursor.execute(
                 f"DELETE FROM articles WHERE datetime(published) < datetime('now', '-{months} months')"
             )
             deleted = cursor.rowcount
-
             self.conn.commit()
 
-            # Compact DB file size
+            # Compact DB file
             try:
                 cursor.execute("VACUUM")
             except Exception as e:
-                # VACUUM can fail if DB is busy; in Actions it's usually fine.
                 logging.warning(f"VACUUM failed: {e}")
 
-            # Count after
             cursor.execute("SELECT COUNT(*) FROM articles")
             after_count = cursor.fetchone()[0]
             self.conn.commit()
@@ -88,10 +81,7 @@ class RSSMonitor:
         print(f"DB purge complete: deleted {deleted} old rows (before={before_count}, after={after_count})")
 
     def is_strict_and_match(self, text):
-        """
-        Strict AND match for all KEYWORDS, exact word match (UPS won't match CUPS).
-        Case-insensitive.
-        """
+        """Strict AND match for all KEYWORDS, exact word match (UPS won't match CUPS)."""
         patterns = [
             re.compile(rf"\b{re.escape(kw)}\b", re.IGNORECASE)
             for kw in KEYWORDS
@@ -120,7 +110,6 @@ class RSSMonitor:
                     if not link:
                         continue
 
-                    # published date
                     pub_date = datetime.now()
                     try:
                         if getattr(entry, "published_parsed", None):
@@ -169,16 +158,7 @@ class RSSMonitor:
         with self.db_lock:
             cursor = self.conn.cursor()
 
-            # Top section: last 50 articles (show match info too)
-            cursor.execute("""
-                SELECT title, link, feed_name, published, keywords_matched, processed_date
-                FROM articles
-                ORDER BY datetime(published) DESC
-                LIMIT 50
-            """)
-            latest_50 = cursor.fetchall()
-
-            # Matches section: last 50 matches
+            # Only show matches: latest 50
             cursor.execute("""
                 SELECT title, link, feed_name, published, keywords_matched, processed_date
                 FROM articles
@@ -207,33 +187,6 @@ class RSSMonitor:
   <p class="muted">Feeds: {', '.join(FEEDS.values())}</p>
   <p class="muted">Strict AND keywords (exact words): {', '.join(KEYWORDS)}</p>
 
-  <h2>Latest 50 Articles (Top)</h2>
-  <table>
-    <tr>
-      <th>Title</th>
-      <th>Feed</th>
-      <th>Published</th>
-      <th>Matched?</th>
-      <th>Keywords</th>
-    </tr>
-"""
-
-        for title, link, feed_name, published, keywords_matched, processed_date in latest_50:
-            is_match = "YES" if (keywords_matched and keywords_matched.strip()) else ""
-            match_class = "match" if is_match else ""
-            html += f"""
-    <tr>
-      <td class="{match_class}"><a href="{link}" target="_blank">{title}</a></td>
-      <td>{feed_name}</td>
-      <td>{published}</td>
-      <td class="{match_class}">{is_match}</td>
-      <td>{keywords_matched or ""}</td>
-    </tr>
-"""
-
-        html += """
-  </table>
-
   <h2>Latest 50 Matches</h2>
   <table>
     <tr>
@@ -244,34 +197,15 @@ class RSSMonitor:
     </tr>
 """
 
-        for title, link, feed_name, published, keywords_matched, processed_date in matches_50:
-            html += f"""
+        if not matches_50:
+            html += """
     <tr>
-      <td class="match"><a href="{link}" target="_blank">{title}</a></td>
-      <td>{feed_name}</td>
-      <td>{published}</td>
-      <td>{keywords_matched}</td>
+      <td colspan="4">No matches found yet.</td>
     </tr>
 """
-
-        html += """
-  </table>
-
-</body>
-</html>
-"""
-
-        with open("index.html", "w", encoding="utf-8") as f:
-            f.write(html)
-
-
-if __name__ == "__main__":
-    monitor = RSSMonitor()
-
-    for feed_url, feed_name in FEEDS.items():
-        monitor.check_feed(feed_url, feed_name)
-
-    # purge again after inserts (keeps DB clean even if it ran a long time)
-    monitor.purge_old_articles(months=3)
-
-    monitor.generate_html()
+        else:
+            for title, link, feed_name, published, keywords_matched, processed_date in matches_50:
+                html += f"""
+    <tr>
+      <td class="match"><a href="{link}" target="_blank">{title}</a></td>
+      <td>{feed_na_
