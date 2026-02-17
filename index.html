@@ -1,0 +1,675 @@
+
+<html>
+<head>
+  <title>RSS Monitor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 30px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    .match { font-weight: bold; }
+    .muted { color: #666; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>RSS Feed Monitor</h1>
+  <p class="muted">Feeds: FreightWaves, CNN, Google News, Teamsters</p>
+  <p class="muted">Strict AND keywords (exact words): UPS, Teamsters</p>
+
+  <h2>Latest 50 Articles (Top)</h2>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Feed</th>
+      <th>Published</th>
+      <th>Matched?</th>
+      <th>Keywords</th>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/port-of-la-containers-weaker-on-import-lull" target="_blank">Port of LA containers weaker on import lull</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-17T20:00:01</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/chicago-steals-crown-for-worst-freight-bottleneck" target="_blank">Chicago steals crown for worst freight bottleneck</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-17T17:28:31</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://teamster.org/2026/02/statement-on-the-passing-of-rev-jesse-jackson-sr/" target="_blank">Statement on the Passing of Rev. Jesse Jackson Sr.</a></td>
+      <td>Teamsters</td>
+      <td>2026-02-17T17:10:06</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/freight-downturn-deepens-as-supply-chain-bankruptcies-mount" target="_blank">Freight downturn deepens as supply chain bankruptcies mount</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-17T17:07:21</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/rail-freight-outlook-waits-for-improved-indicators" target="_blank">Rail freight outlook waits for improved indicators</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-17T16:16:12</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/tl-rates-up-again-without-help-from-volume" target="_blank">TL rates up again without help from volume</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-17T15:23:34</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/searchcarriers-unveils-interactive-search-map-to-visualize-trucking-carrier-discovery" target="_blank">SearchCarriers unveils interactive Search Map to visualize trucking carrier discovery</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-17T14:26:33</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/ups-identifies-22-package-facilities-for-closure" target="_blank">UPS identifies 22 package facilities for closure</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-17T13:46:10</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxObDJ5SWxTNDJ5TjRJWmpQSUgyN09MMVdkS0xBa3A5OGhfV0ZqcHhHcXdwczdTV1VZN2wwRnNqeEIzT2ZGQi1hUmxGbUo0RUNScUloU1A1UWdRbVBZcFZsODlpNEhfMzh3VE5ocUNacGp6NzhEYWx4RUtiWWlNbDYtdXZOUHRQTTlsMEE?oc=5" target="_blank">UPS identifies 22 package facilities for closure - Yahoo Finance</a></td>
+      <td>Google News</td>
+      <td>2026-02-17T13:46:10</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/triumph-financials-white-label-faas-offering-looks-to-grow-factoring-footprint" target="_blank">Triumph Financial’s ‘white label’ FaaS offering looks to grow factoring footprint</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-17T12:00:00</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/national-gas-cap-could-slash-truckers-diesel-bills" target="_blank">National gas cap could slash truckers’ diesel bills</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T21:26:17</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/ait-worldwide-logistics-lands-new-owner" target="_blank">AIT Worldwide Logistics lands new owner</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T19:55:02</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/carriers-anticipate-pricing-power-while-shippers-plan-for-flexibility-in-2026" target="_blank">Carriers anticipate pricing power while shippers plan for flexibility in 2026</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T19:01:58</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/airforwarders-association-chief-fried-calls-it-quits-after-21-years" target="_blank">Airforwarders Association chief Fried calls it quits after 21 years</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T18:48:31</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/dr-john-mcelligott-trucking-industry-health-advocate-dies-at-80" target="_blank">Dr. John McElligott, trucking industry health advocate, dies at 80</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T18:39:33</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/estes-logistics-expands-with-key-trucking-acquisition" target="_blank">Estes Logistics expands with Key Trucking acquisition</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T17:46:17</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/medlog-opens-new-saudi-logistics-park" target="_blank">Medlog opens new Saudi logistics park</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T16:21:20</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/us-manufacturing-pipeline-grows-firms-plan-1b-in-new-factories" target="_blank">US manufacturing pipeline grows, firms plan $1B in new factories</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T15:46:41</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/germanys-hapag-lloyd-buying-zim-of-israel-for-4-2-billion" target="_blank">Germany’s Hapag-Lloyd buying Zim of Israel for $4.2 billion</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T15:25:02</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNbERSUVlHZGNVNENTVEtfT1Nsc0piTGhpekp3NGE2SjEyWV83LUVTMEVaMFhtak05RTlJMVRrbE5RMG5hbUFVd2Fac1o5d3ZGenNtMENaMm9OTm9uTU5ZUlFfbVY5Y2IwQ1dONDVERTZjVFJScTBGakNvUkwwbnFLQklQbVFhZkF3Ty12ejRoWi1JZw?oc=5" target="_blank">UPS vs Teamsters: Court Fight Over Driver Buyout Program Dismissal - News and Statistics - IndexBox</a></td>
+      <td>Google News</td>
+      <td>2026-02-16T14:20:00</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://www.freightwaves.com/news/ups-challenges-teamster-suit-over-150000-driver-buyouts" target="_blank">UPS challenges Teamsters suit over $150,000 driver buyouts</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T14:01:10</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPMGI3UnRZdkV2YWJXZWFfNjBZRzZTODhKUUZjVjZuVXZjUC05NHNHbE9fNlpZUXhUMUt4UG0wb2RaVlVyTVBqU0xDRS11Rkk4SGV0dEZOdUxQOTY4Q0Z1RUNLMERTTlhUcjVtS3c1QWp1NFNMZV9vbU55MVU4dTlfbUd0M2RmbkVlMFJObThEV0FZYk0?oc=5" target="_blank">UPS challenges Teamsters suit over $150,000 driver buyouts - FreightWaves</a></td>
+      <td>Google News</td>
+      <td>2026-02-16T14:01:10</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQSkFSbTZWSktGTkx2UDJ5NlF3Z0NNSnVnd2VVWWhyNW5vcUJCaTBzRWxfZXliaHpDNzk5a3hqVEY4VE5NNVpJZlZYcXJVcGZpYU50QXlNNTItLVpEbjE1Ul94VHZSSVloZzFtanhtc0hOTmlDZC1VcExfaFF5ZkFXRkVkcHpEZw?oc=5" target="_blank">UPS challenges Teamsters suit over $150,000 driver buyouts - Yahoo Finance</a></td>
+      <td>Google News</td>
+      <td>2026-02-16T14:01:10</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/the-high-stakes-fight-over-new-york-citys-renewed-delivery-regulation-law" target="_blank">The high-stakes fight over New York City’s renewed delivery regulation law</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T12:00:00</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/red-state-ags-want-justice-to-review-rail-merger" target="_blank">Red state AGs want Justice to review rail merger</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T11:01:00</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/open-borders-open-trucking" target="_blank">Open Borders, Open Trucking</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T10:54:43</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/intermodal-spot-rates-havent-kept-pace-with-truckings-spot-market-surge-but-thats-about-to-change-in-2026" target="_blank">Intermodal spot rates haven’t kept pace with trucking’s spot market surge — but that’s about to change in 2026</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-15T21:17:35</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/dont-look-but-we-might-be-on-the-brink-of-a-market-breakout" target="_blank">Don’t Look – But We Might Be on the Brink of a Market Breakout</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-15T20:05:21</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/cvsa-approves-17-changes-to-2026-out-of-service-criteria-what-small-carriers-need-to-know-before-april-1" target="_blank">CVSA Approves 17 Changes to 2026 Out-of-Service Criteria – What Small Carriers Need to Know Before April 1</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-15T18:01:58</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/hapag-lloyd-in-talks-to-acquire-zim-for-3-5-billion" target="_blank">Hapag-Lloyd in talks to acquire Zim for $3.5 billion</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-15T15:29:58</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/borderlands-mexico-exports-of-mexican-made-trucks-to-us-fall-54-in-january" target="_blank">Borderlands Mexico: Exports of Mexican-made trucks to US fall 54% in January</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-15T12:00:00</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/international-roadcheck-2026-elds-under-scrutiny" target="_blank">International Roadcheck 2026: ELDs under scrutiny</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-15T02:35:48</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPSkZGZWRBQkhfZUVyRmJIbUZpamlEM3R2YnBqazRWTlpybEUybVkxNUN0elFDdUJSTzlhUzUzcUVhMGVCT3lTenhDRHVRdHAyVENWdk1yNGd1ZXdOcEMyTXZUbHdrcjNnalJyWU1obWZsNy1TQ2xnR29tajluNXpwZmN3?oc=5" target="_blank">UPS driver buyout blocked after Teamsters rush to court with emergency filing - secom.es</a></td>
+      <td>Google News</td>
+      <td>2026-02-14T15:10:48</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOTzNRMmpZZjNWZUNUSlVJUXFkaTdMZFZ1REcwUElsY3VTdVFSTEJxZjJKUF9tSllfV1Q2ZkFHU3g1TGVQWWJlcmVjenkxNndWMnZMWXNYTVF4eU5WRUpUUndJYU9pY2lWV3dHQ2d3Z0x6VE5kazdLRVNwOXdua3N3QjIxeDlHZw?oc=5" target="_blank">Teamsters Lawsuit Puts UPS Driver Choice Overhaul And Job Cuts In Focus - Yahoo Finance</a></td>
+      <td>Google News</td>
+      <td>2026-02-14T10:15:14</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OZ2xDT0pvYUZzME80cUpwOE52M1dLeG5mSGUySkRUNF9VZ2lHcnFNb1ItRG1fNnM0dDZHcURTc1UwMHotVWg3Qkl6NmhwcExFaGQzcFpVTUpwTXR2OHY0TzVsVERvYnhj?oc=5" target="_blank">UPS preparing to offer second driver buyout, as it plans 30,000 layoffs in 2026 - World Socialist Web Site</a></td>
+      <td>Google News</td>
+      <td>2026-02-14T05:45:58</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/tl-carrier-pamt-corp-posts-q4-loss" target="_blank">TL carrier Pamt posts Q4 loss</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T22:11:05</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxOd2Q0dlp0UW1Sc2oyVU85SXVqQmd4QmJndkdHaWozaXlKM0p0ZzJUc0xMTmhnLW5FV3U0Ym9GOUF1V3k4TEtKdVpZWWVnTlg1Y3JEbGFpTU9kNmxYT3RMdkd3WXNqRFA4MTd1SjdfZlU1dU4yZFV4aDVWaFJWbmRNdFJ0enhqNmtrWFB5TkplT1BZMVpGUTFFYnZYOTZ1TVdOOVpSSF9KaXpRaUlkeUFmQ0JoTV9ZbG56Y3Z4NUhYWDQ2NnZKTlEzbnJnUTQxcFNLeHpkcXFiLWFrYU1XalhJX0pYVzZ2eHo4SGNvYjNzdnVxaVp4ejd5OXlNY0hzUU4z?oc=5" target="_blank">Teamsters Seek Injunction to Block UPS Driver Separation Plan - Sourcing Journal</a></td>
+      <td>Google News</td>
+      <td>2026-02-13T21:41:58</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/white-house-eyes-fees-on-foreign-vessels-to-fund-shipbuilding" target="_blank">White House eyes fees on foreign vessels to fund shipbuilding</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T20:50:15</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/tl-stocks-take-wild-ride-into-out-of-q4-earnings-season" target="_blank">TL stocks take wild ride into, out of Q4 earnings season</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T18:22:17</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNYWhFNC01Z1pNUmV3S0hadTU4cTZlWjJ0dFF0YkNXaUJRYUpoaWVzVXFnRGZFMzlXdmlncFkweDN1M2Z1d25GLUxjTEVEWkZOeXYwajNVd1hoaElKTkFtUjNJbjYzQ1VCNWhwajNRaHFwdnNsS2h5dmJuZ1Y0U3drOHQxMkFMTDBmSHZwTktzR1phbWpQVHJJcFhtbS1LOExxOU84UllzUFlLOXN4bGJzaDFTRG15a0U?oc=5" target="_blank">Teamsters ‘Sue’ UPS ‘To Try To Halt Massive’ Job Cuts - WNY Labor Today</a></td>
+      <td>Google News</td>
+      <td>2026-02-13T17:55:12</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/congress-looks-to-fight-chameleon-carrier-trucking-networks" target="_blank">Congress looks to fight ‘chameleon carrier’ trucking networks</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T17:44:20</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/tariff-rethink-trump-reviews-steel-aluminum-duties-as-inflation-looms" target="_blank">Tariff rethink? Trump reviews steel, aluminum duties as inflation looms</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T16:30:50</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/logistics-stock-selloff-thursday-brings-assurances-of-calm" target="_blank">Logistics stock selloff Thursday brings assurances of calm</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T16:17:18</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/dp-world-chairman-resigns-after-epstein-links-revealed" target="_blank">DP World chairman resigns after Epstein links revealed</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T16:15:21</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/trucking-risk-control-could-become-the-new-entrant-gate" target="_blank">Trucking Risk Control Could Become the New Entrant Gate</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T15:31:49</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/lower-freight-shipments-weigh-on-world-container-rates" target="_blank">Lower freight shipments weigh on world container rates</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T15:04:49</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOMUcwUEFsOFdBRVAyeXBBVUVvUjVCSG9IazlJNThwZ3B4TVl0VlQ1dnQxZVU1WEtHdjIySlBpdlJQTUZvN2hxb2pxZDRSZzYtTi1QTjllWmlncWlPMEtya2lGUTJDeUl3bjNaNDFZaTZDNzdWNklvUkFUcmhOWTJuQUo2R3RnNFZMUl9LcU5nN0tpZVZhOUo4Q3gxZXJUcG1JaFdNRg?oc=5" target="_blank">UPS’ plan to cut 30,000 jobs hits legal roadblock amid Amazon pivot - thestreet.com</a></td>
+      <td>Google News</td>
+      <td>2026-02-13T14:33:00</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/new-territory-rxo-debt-rating-from-moodys-now-below-investment-grade-cutoff" target="_blank">New territory: RXO debt rating from Moody’s now below investment-grade cutoff</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T12:00:00</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMkpxZmpGWl9nX0hwR29BenpmVEFJai1qNWRvdlVPdVFpQ3V5VFF6RHpqOTBQN2dUVk9oc1JwdlpLSHEteW9vX2w4SE1rX3FHS2dtSGRyOGljTzBlMjJPNmFJZFhwekFfVmRKNEVaTXg4QUs0VmRPZUozVXJiNVhoemlUeDJhM2E3?oc=5" target="_blank">UPS Teamsters Inch Closer to Approving Contract - Heavy Duty Trucking</a></td>
+      <td>Google News</td>
+      <td>2026-02-13T08:00:00</td>
+      <td class="match">YES</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class=""><a href="https://www.freightwaves.com/news/court-challenge-filed-after-fmcsa-finalizes-non-domiciled-cdl-rule-legal-fight-continues" target="_blank">Court Challenge Filed After FMCSA Finalizes Non-domiciled CDL Rule, Legal Fight Continues</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-13T02:06:46</td>
+      <td class=""></td>
+      <td></td>
+    </tr>
+
+  </table>
+
+  <h2>Latest 50 Matches</h2>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Feed</th>
+      <th>Published</th>
+      <th>Keywords</th>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://teamster.org/2026/02/statement-on-the-passing-of-rev-jesse-jackson-sr/" target="_blank">Statement on the Passing of Rev. Jesse Jackson Sr.</a></td>
+      <td>Teamsters</td>
+      <td>2026-02-17T17:10:06</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNbERSUVlHZGNVNENTVEtfT1Nsc0piTGhpekp3NGE2SjEyWV83LUVTMEVaMFhtak05RTlJMVRrbE5RMG5hbUFVd2Fac1o5d3ZGenNtMENaMm9OTm9uTU5ZUlFfbVY5Y2IwQ1dONDVERTZjVFJScTBGakNvUkwwbnFLQklQbVFhZkF3Ty12ejRoWi1JZw?oc=5" target="_blank">UPS vs Teamsters: Court Fight Over Driver Buyout Program Dismissal - News and Statistics - IndexBox</a></td>
+      <td>Google News</td>
+      <td>2026-02-16T14:20:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://www.freightwaves.com/news/ups-challenges-teamster-suit-over-150000-driver-buyouts" target="_blank">UPS challenges Teamsters suit over $150,000 driver buyouts</a></td>
+      <td>FreightWaves</td>
+      <td>2026-02-16T14:01:10</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPMGI3UnRZdkV2YWJXZWFfNjBZRzZTODhKUUZjVjZuVXZjUC05NHNHbE9fNlpZUXhUMUt4UG0wb2RaVlVyTVBqU0xDRS11Rkk4SGV0dEZOdUxQOTY4Q0Z1RUNLMERTTlhUcjVtS3c1QWp1NFNMZV9vbU55MVU4dTlfbUd0M2RmbkVlMFJObThEV0FZYk0?oc=5" target="_blank">UPS challenges Teamsters suit over $150,000 driver buyouts - FreightWaves</a></td>
+      <td>Google News</td>
+      <td>2026-02-16T14:01:10</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQSkFSbTZWSktGTkx2UDJ5NlF3Z0NNSnVnd2VVWWhyNW5vcUJCaTBzRWxfZXliaHpDNzk5a3hqVEY4VE5NNVpJZlZYcXJVcGZpYU50QXlNNTItLVpEbjE1Ul94VHZSSVloZzFtanhtc0hOTmlDZC1VcExfaFF5ZkFXRkVkcHpEZw?oc=5" target="_blank">UPS challenges Teamsters suit over $150,000 driver buyouts - Yahoo Finance</a></td>
+      <td>Google News</td>
+      <td>2026-02-16T14:01:10</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPSkZGZWRBQkhfZUVyRmJIbUZpamlEM3R2YnBqazRWTlpybEUybVkxNUN0elFDdUJSTzlhUzUzcUVhMGVCT3lTenhDRHVRdHAyVENWdk1yNGd1ZXdOcEMyTXZUbHdrcjNnalJyWU1obWZsNy1TQ2xnR29tajluNXpwZmN3?oc=5" target="_blank">UPS driver buyout blocked after Teamsters rush to court with emergency filing - secom.es</a></td>
+      <td>Google News</td>
+      <td>2026-02-14T15:10:48</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOTzNRMmpZZjNWZUNUSlVJUXFkaTdMZFZ1REcwUElsY3VTdVFSTEJxZjJKUF9tSllfV1Q2ZkFHU3g1TGVQWWJlcmVjenkxNndWMnZMWXNYTVF4eU5WRUpUUndJYU9pY2lWV3dHQ2d3Z0x6VE5kazdLRVNwOXdua3N3QjIxeDlHZw?oc=5" target="_blank">Teamsters Lawsuit Puts UPS Driver Choice Overhaul And Job Cuts In Focus - Yahoo Finance</a></td>
+      <td>Google News</td>
+      <td>2026-02-14T10:15:14</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxOd2Q0dlp0UW1Sc2oyVU85SXVqQmd4QmJndkdHaWozaXlKM0p0ZzJUc0xMTmhnLW5FV3U0Ym9GOUF1V3k4TEtKdVpZWWVnTlg1Y3JEbGFpTU9kNmxYT3RMdkd3WXNqRFA4MTd1SjdfZlU1dU4yZFV4aDVWaFJWbmRNdFJ0enhqNmtrWFB5TkplT1BZMVpGUTFFYnZYOTZ1TVdOOVpSSF9KaXpRaUlkeUFmQ0JoTV9ZbG56Y3Z4NUhYWDQ2NnZKTlEzbnJnUTQxcFNLeHpkcXFiLWFrYU1XalhJX0pYVzZ2eHo4SGNvYjNzdnVxaVp4ejd5OXlNY0hzUU4z?oc=5" target="_blank">Teamsters Seek Injunction to Block UPS Driver Separation Plan - Sourcing Journal</a></td>
+      <td>Google News</td>
+      <td>2026-02-13T21:41:58</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNYWhFNC01Z1pNUmV3S0hadTU4cTZlWjJ0dFF0YkNXaUJRYUpoaWVzVXFnRGZFMzlXdmlncFkweDN1M2Z1d25GLUxjTEVEWkZOeXYwajNVd1hoaElKTkFtUjNJbjYzQ1VCNWhwajNRaHFwdnNsS2h5dmJuZ1Y0U3drOHQxMkFMTDBmSHZwTktzR1phbWpQVHJJcFhtbS1LOExxOU84UllzUFlLOXN4bGJzaDFTRG15a0U?oc=5" target="_blank">Teamsters ‘Sue’ UPS ‘To Try To Halt Massive’ Job Cuts - WNY Labor Today</a></td>
+      <td>Google News</td>
+      <td>2026-02-13T17:55:12</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMkpxZmpGWl9nX0hwR29BenpmVEFJai1qNWRvdlVPdVFpQ3V5VFF6RHpqOTBQN2dUVk9oc1JwdlpLSHEteW9vX2w4SE1rX3FHS2dtSGRyOGljTzBlMjJPNmFJZFhwekFfVmRKNEVaTXg4QUs0VmRPZUozVXJiNVhoemlUeDJhM2E3?oc=5" target="_blank">UPS Teamsters Inch Closer to Approving Contract - Heavy Duty Trucking</a></td>
+      <td>Google News</td>
+      <td>2026-02-13T08:00:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNZEI2UHdxZXhzVUhjaUtFcXRlZlZFZW9NYkhVRm5pWUFNbWNIZUkwVnpLOHZsMXc4WHhjS05GYm5Va0ZkbU9aNm1uWjlYYzZCRUt4SS1TNUR5MWt3bDI0NGgzV094a1N6YmEzUWJ2bzZSWS1Sc1BKQ2pPUjZVWWFUUkkxdVVRV1hxNDcwYVdOZnY3bXBud1lmZ0tsa2N2cEg4VEZCOA?oc=5" target="_blank">UPS sued by Teamsters for job cuts - MSN</a></td>
+      <td>Google News</td>
+      <td>2026-02-12T08:00:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxOd1dKOXp6R1BvSHBDREVRZXowUV8xV3JuY2ROMVNONDNKREZuVThoemNyNThjbU8zNE9PSEhrZzRaTURDSVBGSFhTYmhsMXA2dzYzT1p6MTIxdWJjcjBWMkc2di1DNV9BdXlCZlZLd1NxVU5UUFd6ZTBKRjQ1SjVHblBqd1FxaTI0bmUyOHBWVmZ4TmlSRm1uWlpQQ3NIUXZ2aFpOX1l3UmNsVDkwRU9RenAzZ1JGN1J5MWhMVU9wLU5HQnpGOTVndUlrSXFqdmhnOFV0M0szQTBfS28?oc=5" target="_blank">Teamsters Lawsuit Puts UPS Driver Buyouts And Cost Cuts In Focus - simplywall.st</a></td>
+      <td>Google News</td>
+      <td>2026-02-12T01:41:48</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPZmFFME5aNDFvSVA5MndxeEw2eUM3RXBHc2RfOURYR1dQUWdCb2dJY3ZuSHdzU0cyNmlHVnZlSHpySkE4YUhNME95R0QwUlRzUW4tTEFXY01fcGEwRFpkTnVQaXBmbVFtMmxZM25RMmQ4ZFF1VEdROVdpM1J2R0QwOWcxTWk0TjlydEM4ZXYycHZ1LVM0VzhqUVJrWXJ1dlo2ZEdzc1ZB?oc=5" target="_blank">Teamsters file motion against UPS, regarding driver buyout program - logisticsmgmt.com</a></td>
+      <td>Google News</td>
+      <td>2026-02-11T18:14:10</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxONFVYZ0FHWUVVbVFtSEw0OXA0bEtDeUw0ZnppX0FxSERwSEFPd0pwbGdBUlJBRUtPWlNVZkZTT2Myb1hab3Z6UURKN0RuNHBGcVF1ZVZWakZzUjFwNXJkZE04SjFUWjdYdkhIRl93bGN2SHF5MjMyRUhCSEYyOGRvb0JkcGk3SU9lQS0w?oc=5" target="_blank">Teamsters sue UPS to try to halt massive job cuts - People's World</a></td>
+      <td>Google News</td>
+      <td>2026-02-11T17:52:47</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQTzd3bzZPdW0tOFdVWUI4MnlNNzctQ3BuWWR3RTlLdHA1ZVUtUkphWmgxS3R0OTl4RV9lZXNLVnRxU2o5LXJfQUpLT3A4MDVuQXkxSFJqOHRqSjZpcGVvX2lMQ3otNVdNb3YxalVtaDY4TjRObl9CTDJCQ1AtQXpYRmY1Wmw0RV9lTlgwdE9EeVhubTl6QWpERVNiQjZDVHNsNjl3?oc=5" target="_blank">UPS driver buyout plans hit hurdle with Teamsters lawsuit - Supply Chain Dive</a></td>
+      <td>Google News</td>
+      <td>2026-02-11T15:41:08</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQRVFCNF9ZTGFhcjlIaEQxNjA0NDJ0NFRjTzI0Y2h6cVZDU1VXenN2NUJ3OEw4RWVvUUloSXFfMmk2TEo0bXNZYXlZOTBJT00zTnZPcXBkNVRNVUFGTXc1ZE9vc2FvU0Q3LWhENzVnMzVkVDJOQ3Z0anlnLVBfNFFDRnRUbG0?oc=5" target="_blank">Teamsters Union files emergency restraining order against UPS over buyout program - WLKY</a></td>
+      <td>Google News</td>
+      <td>2026-02-11T04:12:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE81YTZ3Nmk2UGtEWFhTOWZfVTAtUHhxMmQxZm81RjNkYmFfQ0pDZ1ZRMEg4b1JwVmU0bWFFM3gxTGR6ZzMtdk9RdlI3aUxWVU05Z3ZBQ2RRSnhWWk9lUElhVDU3dFAydzNCTEpOa0FZWnk5cUpOcmJhRzhCZTBNUQ?oc=5" target="_blank">Teamsters sues UPS over new driver buyout program - The San Joaquin Valley Sun</a></td>
+      <td>Google News</td>
+      <td>2026-02-11T00:40:46</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPVWhsVm9OOHd0TFV5VDU4SmtyM1E3cGw4UlJVWkxYcXJqTm9DNGVhdzdLNU05RXJycFFjbHV1YnRBOUxwM05UQmh1eU40eWZqbmNNek85c1FMWXhlcjZhU29vVVVpY1cwZjQ4aEU0TDh6Z1VwMVVOU3RuUndmanBacnBIT3Q2MGlBb243dkF3?oc=5" target="_blank">Teamsters union sues UPS for breach of contract - AJC.com</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T18:58:08</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxNR2RrOG5tY21KU21tUS1pa3FONE9CYmMzT2JnTWF5RGdoWlRnazFfb3ROS25ZRHljWndYbi0xdnd5T1ZiYVlhU19XUHJWU0NLSVJaSnRSSDJyZkZrR3JVbWNjVmQ1MG5YYTRyUVFhQmRXb2VqWTJYcGQtVV9QLW4xeFJxUC1xWmpuSzBHSlRtX3N1cWprV09VVWNzUGFEdWZWLTQzRXg1clNZZFRxdEdvWHNZMkdLYzBaQS1vY2EtUVlmXy1Cc3pTdFVFYVpEMkVYaFZiUUlBalpwTlNLRUlFRjF3?oc=5" target="_blank">Teamsters union sues UPS for alleged breach of national labor contract - whas11.com</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T17:24:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZ0hPa3RiMU1adVZrN1JNT0RjME1Cekt5dUFvT1lGSTI1c2dBYmtBaG1OUVgzcjVUOWpFa3oyUWd2WUFJcHMxME1iWFg2a1FaTWY0eWlWSVd2d09rOTFsN3VPc3RxYWMyUVpOUnlaSHhGeE9Cam9PUTNpMEtwNzM3U1FNR214UXNWN2JZLTVza1I1d05SUU1Xb25BZEl2Rm5LMDN2dENOU1lMbXhVV2EzblR3N2RSa0paOUpKeksyU2tTSHJtLTJPSURVSG9BNzY1dUE?oc=5" target="_blank">Teamsters union sues UPS for alleged breach of contract - whas11.com</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T17:16:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPUGwzUXV5SG5lWk9fS0ZodU90UmpwQ2tnay15U2o2RmpSS0c0UzNRTFlsNnc2Z3dkZHZRdzVZWEs3QUhHZWdITTZBOTl5WGRQRWg5TlZpOXpzY1paY1ZPa1V0bnBYRnhmYmRJUlJIWHRDcTItUlU4c2NHS1FIa0ctT2w1OXBSb3dnbkM4S1Zka1ZqVDFWNWlkZlphbFNFTk5OMnBlV3EwemdGUFpKQ3c?oc=5" target="_blank">UPS Buyout Program Violates Teamsters Agreement, Union Claims - Bloomberg Law News</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T17:11:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPMmxVVWh3bHlNaDBoUnQyQXZDWWJQM05xR1dHWkUwVHdaN202LXhmdkJ6VVZHNWQzbXBkN0FDNk1nX2lyVi1xb1E1ZDhYajMxdDAycEVKeUtIM25YQ3VaVnZGTk9XTTJRMlpfTldlbXQxUWVnTlBfTEVaTGNuN2pqaWFQeFZoT3JJMXlpOXlaYU9jaXg3aXNtSENCTQ?oc=5" target="_blank">Teamsters file emergency motion and injunction against UPS buyout - WAVE News</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T17:11:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZjI4eDNLcDQ1QUZMeFp5YndzdHppbS03T1dFbmFLaXNZTDJJUnZXZHB5XzRwUzlUS3gzWmE1akJJSUh2MkhjU1RObXFzaV8waTYtbnRlLXdwNXZ6UTVfdTRlNHNaeG9Hc0tadkpzNVJHTm9sd1ZMZ1A5empPYUxQTl91SEV6b0pNdFBoZHFMYlhJemJyYTB3Ym9CUmpFV0pvUHJlYjVfTDlyc2J5dlR1MdIBtgFBVV95cUxPa1FHYjVlUHVkZFpTWVJ4TjFHRW81UUZ4b0xlTlVGVjkwUjVhcWtaWkJQT1BDeVZpNU9FeTJBQ0xJVTNaTW1WT1ItU1RZS1NsaG52V2VNcGR2dXRCTVNpM3FSSlc3dVcwQjZ1bUZvdThCYndUbDNpQk9zd2RQNlFCMUIwWGNfdlRzTndnQmphd1ZSZ2dLN1I4a1o2bUd5OFZZbTFMNkZvRUVVUDI2b3piaGJmbGRYQQ?oc=5" target="_blank">Teamsters file emergency restraining order to prevent UPS from offering driver buyout - CDLLife</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T16:51:39</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOLWRrZjNuSDg1Q0x6SzA1WVlxb3VBNE1XTlF3VHlSZmpNSVlPOUxpdWx4cTdzNjM4b0pRd1VQNmdQMEdESVctWnQwZUFQbms1Ty1PNWp1cTdLVXpfSTd6amJySVE2MDBkeGpZY1NtaE5iT2xqbjRXSU1Fc0FtYWlHczBpRzNadUptVmNLNVVVUWVDUQ?oc=5" target="_blank">Teamsters File Lawsuit to Stop UPS Driver Buyout Program - News and Statistics - IndexBox</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T16:39:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNTmY1bUlrNW1SWnVfQzBjUEVJZENHSmxnRC1zOHFlbEZDQXJkbEJaeEJWWUhrSGhtcnl0cC1FN19rdjhzOXJ6TXVCOXFRSDdMdkhDWjZseXJXQm1KdU9qZ0ZJalF4QmVEemxpamN2cUJ4d29oTkswOUdLSGpidzZDVUxlOEoxVnVtNHVKMWtRS0k1NW0tMC1VWE5PUm9OMlpyUVE?oc=5" target="_blank">Teamsters union sues UPS to block delivery driver buyouts - FreightWaves</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T15:52:54</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQSnJ2UE16elhVSmhnRXRLTko2cTRFYVlDS1VtWHBYMG5jZkoxdXZuSHZLQnZ3Wnkxc1ZsSTBiRHdFb2V4RnJjQkxMbXJZMjRHUDNuUDdXaHFuVS13LXJKVE5sV2xzX21RcGZOYy0yMTF2YUZydFVNVFB5VnFBRDV4WVFRcENwVWw1WjZPNGwzZlhGZUZfRHp0a1JmVC04S29vaUJSOF9md0pfc1RmbUJUZ0I3Vk00Wlp2RUNKXzNBM3lCVlpMczgyNnN5bGZvc2c?oc=5" target="_blank">Teamsters sue UPS, alleges violations over new driver buyout program - The Courier-Journal</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T15:15:15</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQeDJZeW9kY0l0ZzZkSXpJa3Z5NUh1R0I1LU02cHZnQndrdFpQVE5WdjdwV1FSemEtbUNFNWhWbldIVHFzbmNyNmxwazUzeHBBbmNQNk4yd0lSeTRya0RBMWFPTlNWZHI0dHdxamZiUjJrcDhROGJ4anA3dnpWSWRpYkRheGtjVUs4OTNPOWFTREx4bHhac1d4cHlLM1Z0dzBsYWZQZTM2aUtxQU95MUc4?oc=5" target="_blank">Teamsters union sues UPS over new driver buyout program - MSN</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T07:05:11</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnhta1E2eDJFR0RUZGFvTGFncF9kczMwWEhZYzJBVWd2VU9mVjNyLTFmZGJmSmlZSE5HYzVSU1IyYUs1TGJudE9pY1lJbkVSNUw5YURMVGluQnJ3SHI4UkVhbmY5cFM2VGF6VkJPZG9aVmhxbm5LZkdDUkpVYS1Ha3BmYnpybnkxZ2l5Zw?oc=5" target="_blank">Teamsters Challenge UPS Driver Buyouts And Raise Questions On Labor Risk - Yahoo Finance</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T02:11:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWVZ3NVdDeW1DeHpfUzlSZk1jc1pwT2JZN0pPMVNBYkNxX18yOHFIaTFmb3dkemtWWW4tbW9kRjY3V0ZHQy1kaG00WDQ3T19ONU1pRGs4M2R6WkR0c284bncyRHVvSENvMkxneTI3cU1Nb0s3NlJ6R0hPMXBRS3dLa2ZsUzFtdDB1dzFIMlllR21mZ1Y2VWdKTmFMNUt4YjRyQm9DNUstZXhNQUky0gFyQVVfeXFMTkRQRlpQTkpmTWNSb0gxTXZzY3NsMG9ma2NpMXF1anQ2dk9VdElUQlJWcmFLWHRPQzI2d18tVFVzLVcwZGZRT0hjQ2ZYUDhWWF9sdnhPV1hwQnR2U3ZpVEROazZQNGNzb1ZrWDJSS2dLVEtR?oc=5" target="_blank">Teamsters Challenge UPS Over Separation Program - Law360</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T00:38:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOb1RZV3FhWUZBZG02QjJ4OW5pNXl0MVpnZGJvWmFOYnMtRVhNRXNXNVZaeEYwT2Y2VGt6TlB1c1hyd2pTeWI0eEhXVGlKcERRSlN0eW5HdnBza210OWdxNzFITllkNTJmcjE2aHNMVU5pcm93bU1QaW1Xb2RVZTdjWFZ2N3BWM1Riby0zRmZzbE43T2VNMmFKRzd2Vk9ZY0tCdUNjNlBSTHFQSXN2MWhTS2V3?oc=5" target="_blank">Teamsters union sues UPS over new driver buyout program By Reuters - Investing.com</a></td>
+      <td>Google News</td>
+      <td>2026-02-10T00:01:09</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://teamster.org/2026/02/teamsters-sue-ups-for-breach-of-national-contract/" target="_blank">Teamsters Sue UPS for Breach of National Contract</a></td>
+      <td>Teamsters</td>
+      <td>2026-02-09T22:14:56</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPVnJQYlg1R0Fqc0poYU5oeTljS2ZXQ0NTN3czTE1jWU13MGZqbkEzNFFESXdvVHVrS0piNEptUzB0VDdkYUlzWmVLbGdPT0FyMUp1VGNzdXBPN1JkejJqTERSOUlFRkV1c2U0X1pVdFNCcGVtUGoyLTcxVXdPRDZabm8zTFJyQQ?oc=5" target="_blank">Teamsters Sue UPS for Breach of National Contract - International Brotherhood of Teamsters</a></td>
+      <td>Google News</td>
+      <td>2026-02-09T08:00:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+    <tr>
+      <td class="match"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNUDBEbTNaMU1yWTM4eGMxczlwMjY3RXRiY0pLSUgyWk96TUp2RHR1NVJQOEpyYkdXRk9wNkQ4TDNNMFExME9YdE9faDRQeklXSzJOZHpMS1BSMkhna01hZm9TMm1xSkNydDloeWVqQTBZVjVQcEwxZ0F1TzlQVEJLa2NVcVpZRzR3c08wQXhDcmNjSlhEUkJuWEtHYzlubWtCSFJtNkU0YjlMMXF5cFNTdkRDQXY?oc=5" target="_blank">Teamsters union sues UPS over new driver buyout program - Reuters</a></td>
+      <td>Google News</td>
+      <td>2026-02-09T08:00:00</td>
+      <td>UPS,Teamsters</td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
