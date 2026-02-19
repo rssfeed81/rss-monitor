@@ -2,8 +2,14 @@
 FEEDS = {
     "https://feeds.feedburner.com/Freightwaves": "FreightWaves",
     "https://rss.cnn.com/rss/edition": "CNN",
-    "https://news.google.com/rss/search?q=%22ups%22%20AND%20%22teamsters%22&hl=en-US&gl=US&ceid=US%3Aen": "Google News",
+    "https://onlabor.org/feed": "On Labor",
     "https://teamster.org/feed/": "Teamsters",
+    "https://about.ups.com/newsroom": "UPS Newsroom",
+    "https://server5.unionactive.com/dynadocs/unionactive_newswire.xml": "Union Active",
+    "https://www.thetrucker.com/feed": "The Trucker",
+    "https://www.ttnews.com/rss.xml": "Transportation Topics",
+    "https://cdllife.com/feed/": "CDL Life",
+    "https://tdu.org/news/": "TDU News"
 }
 
 # Keywords to monitor (case insensitive)
@@ -24,4 +30,5 @@ EMAIL_SETTINGS = {
     "smtp_server": "smtp.gmail.com",
     "smtp_port": 465,
 }
+
 
