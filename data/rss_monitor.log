@@ -346,3 +346,6 @@
 2026-02-27 22:53:45,692 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
 2026-02-27 22:53:46,475 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:49:67: not well-formed (invalid token)
 2026-02-27 22:53:47,621 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
+2026-02-27 23:47:57,922 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-02-27 23:47:59,226 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:49:67: not well-formed (invalid token)
+2026-02-27 23:48:00,616 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
