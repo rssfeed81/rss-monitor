@@ -3069,3 +3069,8 @@
 2026-04-09 23:05:23,176 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
 2026-04-09 23:05:33,211 - WARNING - Feed parse issue for Union Active: <urlopen error [Errno -3] Temporary failure in name resolution>
 2026-04-09 23:05:34,011 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
+2026-04-09 23:52:11,710 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-04-09 23:52:12,737 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-04-09 23:52:27,780 - WARNING - Feed parse issue for Union Active: <urlopen error [Errno -3] Temporary failure in name resolution>
+2026-04-09 23:52:28,193 - WARNING - Feed parse issue for Transportation Topics: text/html; charset=UTF-8 is not an XML media type
+2026-04-09 23:52:28,838 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
