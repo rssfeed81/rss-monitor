@@ -4063,3 +4063,6 @@
 2026-04-24 20:06:11,074 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
 2026-04-24 20:06:11,994 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
 2026-04-24 20:06:17,167 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
+2026-04-24 21:03:54,685 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-04-24 21:03:55,553 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-04-24 21:03:56,919 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
