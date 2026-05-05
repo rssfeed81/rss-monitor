@@ -4679,3 +4679,7 @@
 2026-05-05 17:04:00,865 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
 2026-05-05 17:04:01,476 - WARNING - Feed parse issue for The Trucker: <unknown>:556:225: not well-formed (invalid token)
 2026-05-05 17:04:02,033 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
+2026-05-05 18:45:08,766 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-05-05 18:45:09,657 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-05-05 18:45:10,328 - WARNING - Feed parse issue for The Trucker: <unknown>:610:225: not well-formed (invalid token)
+2026-05-05 18:45:10,691 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
