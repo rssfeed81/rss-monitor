@@ -5651,3 +5651,6 @@
 2026-05-30 14:02:08,444 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
 2026-05-30 14:02:09,444 - WARNING - Feed parse issue for Transportation Topics: text/html; charset=UTF-8 is not an XML media type
 2026-05-30 14:02:09,676 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
+2026-05-30 15:34:12,198 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-05-30 15:34:13,190 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-05-30 15:34:14,654 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
