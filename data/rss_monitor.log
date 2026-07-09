@@ -6905,3 +6905,6 @@
 2026-07-09 08:46:29,280 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
 2026-07-09 08:46:30,037 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
 2026-07-09 08:46:31,200 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
+2026-07-09 11:33:14,896 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-07-09 11:33:15,689 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-07-09 11:33:16,956 - WARNING - Feed parse issue for TDU News: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tdu.org'. (_ssl.c:1147)>
