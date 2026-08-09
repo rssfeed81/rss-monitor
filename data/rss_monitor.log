@@ -8431,3 +8431,7 @@
 2026-08-09 04:13:38,156 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
 2026-08-09 04:13:38,925 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
 2026-08-09 04:13:41,025 - WARNING - Feed parse issue for TDU News: <urlopen error [Errno -5] No address associated with hostname>
+2026-08-09 05:17:49,194 - WARNING - Feed parse issue for FreightWaves: <unknown>:182:168: not well-formed (invalid token)
+2026-08-09 05:17:49,264 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-08-09 05:17:50,081 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-08-09 05:17:50,939 - WARNING - Feed parse issue for TDU News: <urlopen error [Errno -5] No address associated with hostname>
