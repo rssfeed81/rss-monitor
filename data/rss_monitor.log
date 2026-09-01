@@ -10662,3 +10662,6 @@
 2026-09-01 12:20:21,755 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
 2026-09-01 12:20:22,689 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
 2026-09-01 12:20:24,183 - WARNING - Feed parse issue for TDU News: <urlopen error [Errno -5] No address associated with hostname>
+2026-09-01 16:47:23,826 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-09-01 16:47:24,568 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-09-01 16:47:25,773 - WARNING - Feed parse issue for TDU News: <urlopen error [Errno -5] No address associated with hostname>
