@@ -10977,3 +10977,7 @@
 2026-09-13 17:29:23,053 - WARNING - Feed parse issue for Union Active: document declared as us-ascii, but parsed as windows-1252
 2026-09-13 17:29:23,395 - WARNING - Feed parse issue for Transportation Topics: text/html; charset=UTF-8 is not an XML media type
 2026-09-13 17:29:23,885 - WARNING - Feed parse issue for TDU News: <urlopen error [Errno -5] No address associated with hostname>
+2026-09-13 19:39:33,082 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-09-13 19:39:34,083 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-09-13 19:39:34,516 - WARNING - Feed parse issue for Union Active: document declared as us-ascii, but parsed as windows-1252
+2026-09-13 19:39:35,949 - WARNING - Feed parse issue for TDU News: <urlopen error [Errno -5] No address associated with hostname>
