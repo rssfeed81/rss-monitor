@@ -11484,3 +11484,6 @@
 2026-10-11 10:25:50,533 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
 2026-10-11 10:25:51,651 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
 2026-10-11 10:25:54,415 - WARNING - Feed parse issue for TDU News: <unknown>:2:1326: not well-formed (invalid token)
+2026-10-11 16:22:46,343 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-10-11 16:22:57,587 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-10-11 16:23:06,778 - WARNING - Feed parse issue for TDU News: <unknown>:2:1326: not well-formed (invalid token)
