@@ -11682,3 +11682,7 @@
 2026-10-21 23:15:38,491 - WARNING - Feed parse issue for The Trucker: <unknown>:402:1568: not well-formed (invalid token)
 2026-10-21 23:15:38,624 - WARNING - Feed parse issue for Transportation Topics: text/html; charset=UTF-8 is not an XML media type
 2026-10-21 23:15:39,102 - WARNING - Feed parse issue for TDU News: <unknown>:2:1326: not well-formed (invalid token)
+2026-10-22 01:32:38,978 - WARNING - Feed parse issue for CNN: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:1147)>
+2026-10-22 01:32:40,114 - WARNING - Feed parse issue for UPS Newsroom: <unknown>:10:2: mismatched tag
+2026-10-22 01:32:40,520 - WARNING - Feed parse issue for The Trucker: <unknown>:402:1568: not well-formed (invalid token)
+2026-10-22 01:32:41,635 - WARNING - Feed parse issue for TDU News: <unknown>:2:1326: not well-formed (invalid token)
